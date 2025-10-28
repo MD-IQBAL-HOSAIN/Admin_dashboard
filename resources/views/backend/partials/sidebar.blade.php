@@ -46,7 +46,7 @@
                 <li class="nav-item">
                     <a class="nav-link menu-link {{ request()->routeIs('backend.system-user.*') ? 'active' : '' }}"
                         href="{{ route('backend.system-user.index') }}">
-                        <i class="ri-dashboard-line"></i> <span>List of Users</span>
+                        <i class="ri-user-line"></i> <span>List of Users</span>
                     </a>
                 </li>
                 <!-- end Dashboard Menu -->
