@@ -4,7 +4,7 @@
             <div class="d-flex">
                 <!-- LOGO -->
                 <div class="navbar-brand-box horizontal-logo">
-                    <a href="index.html" class="logo logo-dark">
+                    <a href="{{ route('backend.dashboard.index') }}" class="logo logo-dark">
                         <span class="logo-sm">
                             <img src="{{asset('')}}assets/images/logo-sm.png" alt="" height="22">
                         </span>
@@ -13,7 +13,7 @@
                         </span>
                     </a>
 
-                    <a href="index.html" class="logo logo-light">
+                    <a href="{{ route('backend.dashboard.index') }}" class="logo logo-light">
                         <span class="logo-sm">
                             <img src="{{asset('')}}assets/images/logo-sm.png" alt="" height="22">
                         </span>
@@ -55,7 +55,7 @@
                     <button type="button" class="btn" id="page-header-user-dropdown" data-bs-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <span class="d-flex align-items-center">
-                            <img class="rounded-circle header-profile-user" src="{{Auth::user()->avatar ? asset(Auth::user()->avatar) : asset('assets/images/users/avatar-2.jpg')}}"
+                            <img class="rounded-circle header-profile-user" src="{{Auth::user()->avatar ? asset(Auth::user()->avatar) : asset('frontend/default-avatar-profile.jpg')}}"
                                 alt="Header Avatar">
                             <span class="text-start ms-xl-2">
                                 <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{{Auth::user()->name}}</span>
